@@ -52,19 +52,22 @@ pip install -r requirements.txt
 Set up environment variables
 Create a .env file in the project root:
 
+```bash
 OPENAI_API_KEY=your_openai_api_key
 UPSTASH_REDIS_REST_URL=your_upstash_redis_url
 UPSTASH_REDIS_REST_TOKEN=your_upstash_redis_token
 VECTOR_DB_PATH=./chroma_db
 SESSION_TIMEOUT_MIN=30
 RATE_LIMIT=60/minute
+```
 
 ## ▶️ Running the App
 
 **Start the server with:**
 
+```bash
 uvicorn app:app --host 0.0.0.0 --port 7860 --reload
-
+```
 
 Navigate to:
 
@@ -103,6 +106,6 @@ Retrieve the session’s Q&A history.
 app.py             # Main FastAPI app
 static/            # Static frontend assets
 index.html         # Default homepage
-chroma_db/         # Vector store (persisted)
+chroma_db/         # Vector store (persisted)(not committed)
 .env               # Environment variables (not committed)
 ```
