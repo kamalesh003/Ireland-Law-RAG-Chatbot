@@ -1,0 +1,28 @@
+fastapi
+uvicorn[standard]
+
+# Environment variable management
+python-dotenv
+pydantic
+pydantic-settings
+
+# CORS middleware and HTTP
+aiofiles
+
+# Redis for session/state cache
+upstash-redis
+
+# Rate limiting
+slowapi
+
+# Logging and utilities
+httpx
+tiktoken
+
+# OpenAI and LangChain
+openai
+langchain
+langchain-community
+
+# Vector DB
+chromadb
