@@ -34,13 +34,12 @@ The bot provides concise, legally grounded answers with references and practical
    ```bash
    git clone https://github.com/your-username/irish-legal-ai-bot.git
    cd irish-legal-ai-bot
-```
+
 
 2. **Create a virtual environment**
    
  ```bash
 python -m venv venv
-source venv/bin/activate   # On Linux/Mac
 venv\Scripts\activate      # On Windows
 ```
 
@@ -99,8 +98,11 @@ GET /session/history
 Retrieve the session’s Q&A history.
 
 ## 🧩 Project Structure
+
+```bash
 app.py             # Main FastAPI app
 static/            # Static frontend assets
 index.html         # Default homepage
-chroma_db/         # Vector store (persisted) (not committed)
+chroma_db/         # Vector store (persisted)
 .env               # Environment variables (not committed)
+```
